@@ -12,8 +12,8 @@ function App() {
     <Container maxW="container.sm">
       <br/>
       <AddTodo />
-      <TodoList />
       <VisibilityFilter />
+      <TodoList />
     </Container>
     </>
   );
