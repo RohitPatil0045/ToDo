@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Button, Container, NavItem } from "react-bootstrap";
 import { selectUser, logout } from '../redux/reducer/userSlice'
 import { useSelector, useDispatch } from 'react-redux';
+import logo from "../img/logo.png";
 
 function Navbar1() {
   const user = useSelector(selectUser);
@@ -15,6 +16,7 @@ function Navbar1() {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
+          <img src={logo} alt="Logo" />
           <Navbar.Brand href="#home" >ToDo List</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
